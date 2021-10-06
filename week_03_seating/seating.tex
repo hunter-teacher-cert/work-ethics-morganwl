@@ -1,0 +1,36 @@
+\documentclass{article}
+
+\usepackage{../../hunter}
+\usepackage{../../homework}
+
+\author{Morgan Wajda-Levie}
+\course{CSCI 77800: Ethics and Computer Science}
+\date{October 6, 2021}
+\title{Seating}
+
+\begin{document}
+
+\maketitle
+
+The simplest change to the algorithm is to make \texttt{seat\_economy}
+aware of the buyers' original block size, and attempt to seat economy
+passengers by block first, if possible. If no suitable block of free
+seats is available, passengers can be seated wherever possible. An
+implementation of this algorithm is included.
+
+A slight improvement over this algorithm could be made by sorting
+economy passengers by block size before attempting to seat them, so that
+largest groups are seated first. One unintended consequence of this
+would be that a family of 5 might buy their tickets last, get the only
+row of 5 adjacent seats, and keep two families, one of 3 and one of 2,
+from sitting together, even if they had purchased their tickets first.
+
+An even better seating algorithm would require a change to the seating
+policy --- instead of allowing all Economy Plus passengers the
+opportunity to choose their seats before any economy passengers are
+seated, a block of Economy passengers would be seated as soon as only
+one available block for a group of their size remains. I leave the
+implementation of this algorithm as an exercise for myself at a later
+date.
+
+\end{document}
