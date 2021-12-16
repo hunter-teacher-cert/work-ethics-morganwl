@@ -1,0 +1,42 @@
+body {
+    max-width: 72em;
+    margin-top: 5em;
+    margin-left: 10%;
+    margin-right: 3em;
+    background-color: #ffe2ee;
+    font-family: Consolas, monospace;
+}
+
+.group {
+    background-color: #fff5ff;
+    padding-top: 1em;
+    padding-bottom: 0.25em;
+    padding-left: 1em;
+    padding-right: 2em;
+}
+
+.metadata {
+    background-color: #552244;
+    padding: 0.25em;
+}
+
+.cell {
+    color: #fff5ff;
+    margin-right: 3px;
+    padding: 2px;
+    display: inline-block;
+}
+
+.cell em {
+    font-weight: bold;
+}
+
+.doctext {
+    padding: 1px;
+    margin-top: 0.5em;
+    padding-right: 3em;
+    padding-bottom: 2em;
+    margin-bottom: 1em;
+}
+
+
