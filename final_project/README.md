@@ -42,6 +42,23 @@ Simple Wikipedia in 2017. This test is discussed at greater length in
 Brunet et al's paper, "Understanding the Origins of Bias in
 Word Embeddings."
 
+#### What's Next?
+
+Given more time, there are a few things I'd love to do with this code:
+
+- Pull metadata formatting out into top-level corpus-hooks that are
+  linked to the corpus text file. This way, new corpora with their own
+  metadata formats can be easily added.
+- Generally improve flow of information and organization of code,
+  possibly reorganizing the way that selects are stored.
+- See if it is possible to pull select articles from the original
+  untokenized Wikimedia corpus and include access to those, possibly
+  using a javascript window.
+- Include links to the untokenized New York Times articles.
+- Use a more standard HTML generation technique, possibly using
+  templates.
+- Calculate some overall statistics and possibly include plots.
+
 #### References
 
 - Understanding the Origins of Bias in Word Embeddings. Brunet,
